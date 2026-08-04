@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfume Feng Shui — Ative sua Prosperidade</title>
+<meta name="description" content="Perfume Feng Shui: ative a prosperidade com ingredientes milenares. Garantia de 30 dias e frete grátis nos kits maiores.">
+<style>
+  :root{
+    --gold:#c9973a;
+    --gold-light:#e9c874;
+    --dark:#120c05;
+    --cream:#f4e2b4;
+    --cream2:#e9cf8e;
+    --green:#3fae2a;
+    --green-dark:#2f8a1f;
+    --yellow:#f2c94c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Arial, Helvetica, sans-serif;color:#111;background:#fff;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* ---- NAV ---- */
+  header.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid #eee;flex-wrap:wrap;gap:10px;}
+  .nav .logo{font-size:22px;font-weight:800;color:#c0392b;letter-spacing:-0.5px;}
+  .nav nav{display:flex;gap:20px;font-size:14px;color:#333;flex-wrap:wrap;}
+  .nav .right{display:flex;align-items:center;gap:20px;font-size:14px;}
+  .nav .login{border:1px solid #ccc;padding:6px 14px;border-radius:4px;}
+
+  /* ---- ARTICLE HEAD ---- */
+  .byline{max-width:900px;margin:16px auto 0;padding:0 20px;font-size:12px;color:#777;}
+  .share{max-width:900px;margin:8px auto;padding:0 20px;display:flex;gap:10px;font-size:14px;color:#999;}
+
+  .video-wrap{max-width:360px;margin:20px auto;padding:0 20px;}
+  .video-box{position:relative;aspect-ratio:9/16;background:#111 url('') center/cover;border-radius:6px;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .video-box .placeholder-text{color:#888;font-size:13px;text-align:center;padding:20px;}
+  .video-box .play{position:absolute;width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;}
+  .video-box .play:after{content:'';border-left:18px solid #c0392b;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px;}
+
+  /* ---- OFFER BANNER ---- */
+  .offer-banner{background:linear-gradient(90deg,var(--dark) 0%, var(--gold) 100%);color:#fff;text-align:center;padding:36px 20px;}
+  .offer-banner h2{font-size:26px;font-weight:800;max-width:720px;margin:0 auto 14px;line-height:1.3;}
+  .countdown{font-size:38px;font-weight:800;letter-spacing:1px;}
+
+  /* ---- PRICING ---- */
+  .pricing{max-width:1180px;margin:40px auto;padding:0 20px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;align-items:flex-end;}
+  .plan{background:linear-gradient(180deg,var(--cream) 0%, var(--cream2) 100%);border-radius:8px;padding:18px;width:220px;text-align:center;position:relative;}
+  .plan.featured{background:linear-gradient(180deg,#2a2013 0%, #4a3a1c 100%);color:#fff;width:250px;padding-top:0;transform:translateY(-14px);box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+  .ribbon{background:linear-gradient(90deg,#e0432b,#c0392b);color:#fff;font-weight:800;padding:10px;border-radius:8px 8px 0 0;margin:0 -18px 14px;font-size:14px;}
+  .plan h3{font-size:18px;font-weight:800;}
+  .plan .sub{font-size:12px;opacity:0.85;margin-bottom:10px;}
+  .plan .prod-placeholder{border:2px dashed #b3903f;border-radius:6px;height:110px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#7a5f2a;margin:10px 0;background:rgba(255,255,255,0.3);}
+  .plan.featured .prod-placeholder{color:#e9c874;border-color:#e9c874;background:rgba(255,255,255,0.05);}
+  .plan .price{font-size:30px;font-weight:800;margin:10px 0 2px;}
+  .plan .price small{font-size:13px;font-weight:400;}
+  .plan .feat-list{list-style:none;margin:12px 0;font-size:12px;font-weight:700;text-align:left;display:flex;flex-direction:column;gap:8px;}
+  .plan .feat-list li{display:flex;align-items:center;gap:8px;background:#fff;border-radius:20px;padding:6px 10px;color:#333;}
+  .plan.featured .feat-list li{background:rgba(255,255,255,0.08);color:#fff;}
+  .feat-list .yes{color:#2f8a1f;font-weight:900;}
+  .feat-list .no{color:#c0392b;font-weight:900;}
+  .cta-btn{display:block;width:100%;background:var(--green);color:#fff;font-weight:800;padding:12px;border:none;border-radius:6px;margin-top:14px;cursor:pointer;font-size:14px;}
+  .cta-btn.yellow{background:var(--yellow);color:#3a2c00;}
+  .plan .total{font-size:12px;margin-top:8px;}
+  .plan .total s{color:#999;margin-right:4px;}
+
+  /* ---- INGREDIENTS ---- */
+  .ingredients{background:var(--dark);color:#fff;text-align:center;padding:50px 20px;}
+  .ingredients .kicker{color:var(--gold-light);font-weight:800;font-size:13px;letter-spacing:1px;}
+  .ingredients h2{font-size:28px;font-weight:800;max-width:760px;margin:8px auto 40px;line-height:1.3;}
+  .ingredients h2 span{color:var(--gold-light);}
+  .ing-grid{display:flex;justify-content:center;gap:60px;flex-wrap:wrap;}
+  .ing-item{max-width:220px;}
+  .ing-icon{width:90px;height:90px;border-radius:50%;background:#fff;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:28px;}
+  .ing-item h4{font-weight:700;margin-bottom:8px;}
+  .ing-item p{font-size:13px;color:#ccc;line-height:1.5;}
+
+  /* ---- GUARANTEE ---- */
+  .guarantee{text-align:center;padding:50px 20px;max-width:700px;margin:0 auto;}
+  .seal{width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#f7e08a,var(--gold));margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;color:#3a2c00;text-align:center;line-height:1.3;box-shadow:0 6px 16px rgba(0,0,0,0.15);}
+  .guarantee h3{font-size:20px;margin-bottom:6px;}
+  .guarantee p{color:#555;font-size:14px;line-height:1.6;margin-top:10px;}
+
+  /* ---- FAQ ---- */
+  .faq{background:#f7f7f7;padding:50px 20px;}
+  .faq h2{max-width:760px;margin:0 auto 20px;font-size:26px;font-weight:800;}
+  .faq-list{max-width:760px;margin:0 auto;}
+  .faq-item{background:#fff;border-radius:6px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.25s ease;font-size:14px;color:#444;line-height:1.6;}
+  .faq-a p{padding:0 18px 16px;}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-q .arrow{transition:transform 0.2s;}
+  .faq-item.open .arrow{transform:rotate(180deg);}
+
+  /* ---- FOOTER ---- */
+  footer{background:#111;color:#aaa;text-align:center;padding:30px 20px;font-size:12px;}
+  footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:14px;}
+  footer .links a{color:#ccc;}
+
+  @media(max-width:700px){
+    .countdown{font-size:28px;}
+    .offer-banner h2{font-size:20px;}
+    .plan.featured{transform:none;}
+    .ing-grid{gap:30px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">Health</div>
+  <nav>
+    <a href="#">Livros</a>
+    <a href="#">Fitness</a>
+    <a href="#">Receitas</a>
+    <a href="#">Qualidade Sono</a>
+    <a href="#">Auto Cuidado</a>
+    <a href="#">Relacionamentos</a>
+  </nav>
+  <div class="right">
+    <a href="#">Videos</a>
+    <a href="#">Materias</a>
+    <a href="#">TV Ao Vivo</a>
+    <span class="login">Entrar</span>
+  </div>
+</header>
+
+<p class="byline">Por: Juliana Brandão · Atualizado há 30 minutos, <span id="today-date"></span></p>
+<div class="share">🔗 📧 🔁 🔗</div>
+
+<div class="video-wrap">
+  <div class="video-box">
+    <!-- Substitua este bloco pelo embed real do seu player (VTurb, YouTube, Panda Video, etc.) -->
+    <div class="placeholder-text">[ESPAÇO PARA VÍDEO VSL 9:16]<br>Insira aqui o embed do seu player</div>
+    <div class="play"></div>
+  </div>
+</div>
+
+<section class="offer-banner">
+  <h2>Garanta agora o seu kit com desconto especial e ative a sua prosperidade!</h2>
+  <div class="countdown" id="countdown1">10:00</div>
+</section>
+
+<section class="pricing" id="pricing1">
+  <div class="plan">
+    <h3>2 UNIDADE</h3>
+    <div class="sub">60 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 2 UN</div>
+    <div class="price">R$16<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="no">✕</span> Sem frete rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$358</s> R$159,00</div>
+  </div>
+
+  <div class="plan">
+    <h3>1 UNIDADE</h3>
+    <div class="sub">30 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 1 UN</div>
+    <div class="price">R$13<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="no">✕</span> Sem frete rápido</li>
+    </ul>
+    <button class="cta-btn yellow" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$208</s> R$129,00</div>
+  </div>
+
+  <div class="plan featured">
+    <div class="ribbon">🔥 Mais Vendido 🔥</div>
+    <h3>5 UNIDADE</h3>
+    <div class="sub">180 dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 5 UN</div>
+    <div class="price">R$30<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="yes">✓</span> 2 bônus grátis</li>
+      <li><span class="yes">✓</span> Frete grátis + rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$749</s> R$299,00</div>
+  </div>
+
+  <div class="plan">
+    <h3>3 UNIDADE</h3>
+    <div class="sub">90 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 3 UN</div>
+    <div class="price">R$20<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="yes">✓</span> Frete grátis + rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$509</s> R$199,00</div>
+  </div>
+</section>
+
+<section class="ingredients">
+  <div class="kicker">INGREDIENTES:</div>
+  <h2>Os ingredientes mais poderosos para <span>Ativar a Prosperidade</span> na vida</h2>
+  <div class="ing-grid">
+    <div class="ing-item">
+      <div class="ing-icon">🌿</div>
+      <h4>Patchouli da Indonésia</h4>
+      <p>Potencializa a fixação e aroma, mantendo o efeito energético por mais tempo</p>
+    </div>
+    <div class="ing-item">
+      <div class="ing-icon">🟤</div>
+      <h4>Canela do Ceilão</h4>
+      <p>Abre caminhos e ativa a prosperidade, atraindo oportunidades pra vida</p>
+    </div>
+    <div class="ing-item">
+      <div class="ing-icon">🌾</div>
+      <h4>Sândalo Indiano</h4>
+      <p>Blindagem e Proteção contra toda negatividade garantindo os efeitos positivos</p>
+    </div>
+  </div>
+</section>
+
+<section class="guarantee">
+  <div class="seal">GARANTIA<br>30 DIAS<br>INCONDICIONAL</div>
+  <h3>100% Satisfação</h3>
+  <p><strong>Se não funcionar, devolvemos todo o seu dinheiro!</strong></p>
+  <p>A sua compra está protegida pela nossa Garantia de Satisfação de 30 dias, a contar da data original da compra. Se não estiver satisfeito com a sua experiência, basta entrar em contato e nossa equipe resolverá a situação.</p>
+</section>
+
+<section class="offer-banner">
+  <h2>Garanta agora o seu kit com desconto especial e ative a sua prosperidade!</h2>
+  <div class="countdown" id="countdown2">10:00</div>
+</section>
+
+<section class="pricing" id="pricing2">
+  <div class="plan">
+    <h3>2 UNIDADE</h3>
+    <div class="sub">60 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 2 UN</div>
+    <div class="price">R$16<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="no">✕</span> Sem frete rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$358</s> R$159,00</div>
+  </div>
+
+  <div class="plan">
+    <h3>1 UNIDADE</h3>
+    <div class="sub">30 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 1 UN</div>
+    <div class="price">R$13<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="no">✕</span> Sem frete rápido</li>
+    </ul>
+    <button class="cta-btn yellow" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$208</s> R$129,00</div>
+  </div>
+
+  <div class="plan featured">
+    <div class="ribbon">🔥 Mais Vendido 🔥</div>
+    <h3>5 UNIDADE</h3>
+    <div class="sub">180 dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 5 UN</div>
+    <div class="price">R$30<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="yes">✓</span> 2 bônus grátis</li>
+      <li><span class="yes">✓</span> Frete grátis + rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$749</s> R$299,00</div>
+  </div>
+
+  <div class="plan">
+    <h3>3 UNIDADE</h3>
+    <div class="sub">90 Dias de ativação</div>
+    <div class="prod-placeholder">FOTO<br>KIT 3 UN</div>
+    <div class="price">R$20<small>/ em 12x no cartão</small></div>
+    <ul class="feat-list">
+      <li><span class="no">✕</span> Sem bônus</li>
+      <li><span class="yes">✓</span> Frete grátis + rápido</li>
+      <li><span class="yes">✓</span> Garantia de 30 dias</li>
+    </ul>
+    <button class="cta-btn" onclick="location.href='#comprar'">Comprar Agora 🛒</button>
+    <div class="total"><s>R$509</s> R$199,00</div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Perguntas frequentes</h2>
+  <div class="faq-list" id="faq-list"></div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Envios e prazos</a>
+    <a href="#">Trocas e devoluções</a>
+    <a href="#">Contato</a>
+  </div>
+  <div>Copyright <span id="year"></span> © PERFUME FENG SHUI - TODOS OS DIREITOS RESERVADOS.</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('today-date').textContent = new Date().toLocaleDateString('pt-BR', {weekday:'long', day:'2-digit', month:'long', year:'numeric'});
+
+// Countdown timers (reset toda vez que a página carrega — padrão de escassez)
+function startCountdown(elId, minutes){
+  let total = minutes*60;
+  const el = document.getElementById(elId);
+  function tick(){
+    if(total <= 0){ total = minutes*60; } // loop; troque por lógica fixa se preferir
+    const m = String(Math.floor(total/60)).padStart(2,'0');
+    const s = String(total%60).padStart(2,'0');
+    el.textContent = m+':'+s;
+    total--;
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+startCountdown('countdown1', 10);
+startCountdown('countdown2', 10);
+
+// FAQ data — edite as perguntas/respostas para o seu produto
+const faqData = [
+  {q:"O perfume realmente atrai prosperidade?", a:"O Perfume Feng Shui foi inspirado em princípios milenares de energia e prosperidade. Ele representa um ritual diário de confiança, energia positiva e abundância."},
+  {q:"Qual a duração da fragrância?", a:"A fragrância possui excelente fixação, permanecendo por horas na pele."},
+  {q:"Homens ou mulheres podem usar?", a:"Sim. A fragrância foi desenvolvida para ser elegante e sofisticada, podendo ser usada por qualquer pessoa."},
+  {q:"Em quanto tempo eu recebo meu pedido?", a:"O prazo de entrega varia conforme sua região, normalmente entre 5 e 12 dias úteis."},
+  {q:"A compra é segura?", a:"Sim. Utilizamos ambiente de pagamento protegido e criptografado."},
+  {q:"E se eu não gostar do cheiro?", a:"Devolva no prazo de 30 dias mesmo com o frasco aberto. Devolvemos 100% do valor. Você fica com o frasco. Sem perguntas."},
+  {q:"Sou cético. Funciona mesmo?", a:"A ciência diz que sim: o olfato é o sentido mais ligado a emoção e memória (sistema límbico). Quando você usa um aroma rico e marcante todo dia, sua postura, presença e confiança SIM mudam — isso é mecânica neurológica, não fé. Se as oportunidades aparecem ou não depende de você. Nós entregamos o aroma certo. O resto é com seu dia."},
+  {q:"É golpe? Tem CNPJ?", a:"Sim. Operamos como [SUA RAZÃO SOCIAL] LTDA — CNPJ [00.000.000/0001-00] ([sua cidade/UF]). Atendimento via WhatsApp. Garantia de 30 dias com devolução total."},
+  {q:"Quanto tempo dura um frasco?", a:"Com uso diário de 3 borrifadas, cada frasco dura de 60 a 75 dias. No kit 3, você tem perfume pra ~6 meses."},
+  {q:"Como devolvo se não gostar?", a:"Mande mensagem no nosso WhatsApp. A gente passa o passo a passo da devolução — sem questionário, sem complicação. Dinheiro de volta em até 7 dias úteis."},
+  {q:"Isso vai contra minha religião?", a:"O Perfume Feng Shui é antes de tudo um PERFUME. As notas olfativas (canela, sândalo, âmbar, mel) são as mesmas usadas há séculos em perfumaria fina mundial. A inspiração na tradição Feng Shui é estética e simbólica — não é prática espiritual. Você usa como qualquer perfume sofisticado. O ritual é seu."}
+];
+const list = document.getElementById('faq-list');
+faqData.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `<button class="faq-q" onclick="this.parentElement.classList.toggle('open')">${item.q}<span class="arrow">▾</span></button><div class="faq-a"><p>${item.a}</p></div>`;
+  list.appendChild(div);
+});
+</script>
+
+</body>
+</html>
